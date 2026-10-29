@@ -1,0 +1,29 @@
+{
+  "fingerprint": "2377ad59d6f4f4f6aff25425a91f6f9b434039112bfaca9db3822f882dcda4d6",
+  "winner": {
+    "model": "LinearRegression",
+    "stage": "tuned",
+    "parameters": {
+      "pipeline__features__profile": "price_interactions",
+      "target_mode": "raw"
+    },
+    "profile": "price_interactions",
+    "visibility": "raw",
+    "visibility_policy": "impute",
+    "include_ratio": false,
+    "target_mode": "raw",
+    "cv_rmse": 1082.2938931000797,
+    "cv_std": 15.699880402190834,
+    "train_rmse": 1075.4309991937714,
+    "fit_seconds": 0.20149798393249513,
+    "predict_seconds": 0.07107977867126465,
+    "fold_rmse": [
+      1069.6543979914743,
+      1073.2795443072905,
+      1110.7495323828746,
+      1087.7969351345575,
+      1069.9890556842017
+    ]
+  },
+  "selection_basis": "Development CV only; reserved-check metrics not yet computed."
+}

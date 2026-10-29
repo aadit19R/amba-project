@@ -1,0 +1,112 @@
+[
+  {
+    "model": "MeanBaseline",
+    "stage": "baseline",
+    "parameters": {},
+    "profile": "none",
+    "visibility": "none",
+    "visibility_policy": "none",
+    "include_ratio": false,
+    "target_mode": "raw",
+    "cv_rmse": 1719.3117493788118,
+    "cv_std": 31.57555367824367,
+    "train_rmse": 1719.2495906440952,
+    "fit_seconds": 0.004340171813964844,
+    "predict_seconds": 0.0004894256591796875,
+    "fold_rmse": [
+      1704.673779045898,
+      1718.6443234534336,
+      1776.2212289309282,
+      1680.2583573523714,
+      1716.761058111427
+    ]
+  },
+  {
+    "model": "LinearRegression",
+    "stage": "baseline",
+    "parameters": {},
+    "profile": "compact",
+    "visibility": "raw",
+    "visibility_policy": "impute",
+    "include_ratio": false,
+    "target_mode": "raw",
+    "cv_rmse": 1121.825511916956,
+    "cv_std": 13.019788273833521,
+    "train_rmse": 1115.8283893051207,
+    "fit_seconds": 0.17035908699035646,
+    "predict_seconds": 0.05998082160949707,
+    "fold_rmse": [
+      1108.5155523836897,
+      1125.0831673681582,
+      1143.508494542265,
+      1123.8210309350397,
+      1108.1993143556278
+    ]
+  },
+  {
+    "model": "KNN",
+    "stage": "baseline",
+    "parameters": {},
+    "profile": "compact",
+    "visibility": "raw",
+    "visibility_policy": "impute",
+    "include_ratio": false,
+    "target_mode": "raw",
+    "cv_rmse": 1260.2306181177087,
+    "cv_std": 24.852615396573544,
+    "train_rmse": 1214.789522032856,
+    "fit_seconds": 0.16148271560668945,
+    "predict_seconds": 0.08569798469543458,
+    "fold_rmse": [
+      1238.222535115985,
+      1250.6078744393494,
+      1307.5957014373525,
+      1260.850980977991,
+      1243.875998617866
+    ]
+  },
+  {
+    "model": "SVR",
+    "stage": "baseline",
+    "parameters": {},
+    "profile": "compact",
+    "visibility": "raw",
+    "visibility_policy": "impute",
+    "include_ratio": false,
+    "target_mode": "raw",
+    "cv_rmse": 1136.1813104742496,
+    "cv_std": 22.555696766503996,
+    "train_rmse": 1035.9328531738297,
+    "fit_seconds": 0.583081865310669,
+    "predict_seconds": 0.1823408603668213,
+    "fold_rmse": [
+      1129.9740653970687,
+      1122.5620127724403,
+      1180.9651402439556,
+      1122.5284383037135,
+      1124.87689565407
+    ]
+  },
+  {
+    "model": "RandomForest",
+    "stage": "baseline",
+    "parameters": {},
+    "profile": "compact",
+    "visibility": "raw",
+    "visibility_policy": "impute",
+    "include_ratio": false,
+    "target_mode": "raw",
+    "cv_rmse": 1240.1459166857862,
+    "cv_std": 10.049050179553333,
+    "train_rmse": 1219.6391130166944,
+    "fit_seconds": 1.6649179935455323,
+    "predict_seconds": 0.10931062698364258,
+    "fold_rmse": [
+      1240.8665632647221,
+      1221.126981303629,
+      1248.490876182113,
+      1248.5507792515791,
+      1241.6943834268886
+    ]
+  }
+]

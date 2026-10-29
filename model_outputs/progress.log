@@ -1,0 +1,20 @@
+2026-10-24T10:39:14+00:00 Development=6818, reserved check=1705; five shared folds.
+2026-10-24T10:39:14+00:00 Baseline: MeanBaseline
+2026-10-24T10:39:14+00:00 MeanBaseline: CV RMSE=1719.312 ± 31.576
+2026-10-24T10:39:14+00:00 Baseline: LinearRegression
+2026-10-24T10:39:14+00:00 LinearRegression: CV RMSE=1121.826 ± 13.020
+2026-10-24T10:39:14+00:00 Baseline: KNN
+2026-10-24T10:39:15+00:00 KNN: CV RMSE=1260.231 ± 24.853
+2026-10-24T10:39:15+00:00 Baseline: SVR
+2026-10-24T10:39:17+00:00 SVR: CV RMSE=1136.181 ± 22.556
+2026-10-24T10:39:17+00:00 Baseline: RandomForest
+2026-10-24T10:39:21+00:00 RandomForest: CV RMSE=1240.146 ± 10.049
+2026-10-24T10:39:21+00:00 Search: LinearRegression, 12 candidates × five folds
+2026-10-24T10:39:26+00:00 LinearRegression: best searched CV RMSE=1082.294 ± 15.700
+2026-10-24T10:39:26+00:00 Search: KNN, 16 candidates × five folds
+2026-10-24T10:39:34+00:00 KNN: best searched CV RMSE=1120.959 ± 21.756
+2026-10-24T10:39:34+00:00 Search: SVR, 20 candidates × five folds
+2026-10-24T10:40:33+00:00 SVR: best searched CV RMSE=1114.383 ± 16.684
+2026-10-24T10:40:33+00:00 Search: RandomForest, 24 candidates × five folds
+2026-10-24T10:41:52+00:00 RandomForest: best searched CV RMSE=1099.804 ± 16.782
+2026-10-24T10:41:52+00:00 FROZEN WINNER: LinearRegression (tuned), CV RMSE=1082.294

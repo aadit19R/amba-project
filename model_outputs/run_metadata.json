@@ -1,0 +1,113 @@
+{
+  "created_utc": "2026-10-24T10:47:50.350513+00:00",
+  "fingerprint": "2377ad59d6f4f4f6aff25425a91f6f9b434039112bfaca9db3822f882dcda4d6",
+  "versions": {
+    "python": "3.13.6",
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "train_frame_sha256": "4a377710cd4e793c04e821c12bb02b63c28d3f3316827f5cbcb9965bf1387455",
+  "test_frame_sha256": "d52aa293a34fcf3702f360b98963767608b0fe6d4a0610391f3a43fad7c0b08c",
+  "raw_file_sha256": {
+    "train_v9rqX0R.csv": "6f1b47d794ff393663517a075c3648baf413d0f1d687878b21c806d293ec2e41",
+    "test_AbJTz2l.csv": "2054baa1f31359249047c2f9fefc2c3f6ce702c9ef45a898923d2459c434b23a"
+  },
+  "winner": {
+    "model": "LinearRegression",
+    "stage": "tuned",
+    "parameters": {
+      "pipeline__features__profile": "price_interactions",
+      "target_mode": "raw"
+    },
+    "profile": "price_interactions",
+    "visibility": "raw",
+    "visibility_policy": "impute",
+    "include_ratio": false,
+    "target_mode": "raw",
+    "cv_rmse": 1082.2938931000797,
+    "cv_std": 15.699880402190834,
+    "train_rmse": 1075.4309991937714,
+    "fit_seconds": 0.20149798393249513,
+    "predict_seconds": 0.07107977867126465,
+    "fold_rmse": [
+      1069.6543979914743,
+      1073.2795443072905,
+      1110.7495323828746,
+      1087.7969351345575,
+      1069.9890556842017
+    ]
+  },
+  "estimator_parameters": {
+    "copy_X": true,
+    "fit_intercept": true,
+    "n_jobs": null,
+    "positive": false,
+    "tol": 1e-06
+  },
+  "selected_features": [
+    "Item_MRP",
+    "Item_Weight",
+    "Item_Visibility_ZeroOrMissing",
+    "Visibility",
+    "Item_Fat_Content_Regular",
+    "Item_Type_Breads",
+    "Item_Type_Breakfast",
+    "Item_Type_Canned",
+    "Item_Type_Dairy",
+    "Item_Type_Frozen Foods",
+    "Item_Type_Fruits and Vegetables",
+    "Item_Type_Hard Drinks",
+    "Item_Type_Health and Hygiene",
+    "Item_Type_Household",
+    "Item_Type_Meat",
+    "Item_Type_Others",
+    "Item_Type_Seafood",
+    "Item_Type_Snack Foods",
+    "Item_Type_Soft Drinks",
+    "Item_Type_Starchy Foods",
+    "Outlet_OUT013",
+    "Outlet_OUT017",
+    "Outlet_OUT018",
+    "Outlet_OUT019",
+    "Outlet_OUT027",
+    "Outlet_OUT035",
+    "Outlet_OUT045",
+    "Outlet_OUT046",
+    "Outlet_OUT049",
+    "MRP_x_Outlet_Type_Supermarket Type1",
+    "MRP_x_Outlet_Type_Supermarket Type2",
+    "MRP_x_Outlet_Type_Supermarket Type3"
+  ],
+  "selected_feature_count": 32,
+  "metrics": {
+    "development_oof": {
+      "rmse": 1082.4087778584894,
+      "mae": 758.8370232385184,
+      "r2": 0.6036506585974694
+    },
+    "reserved_check": {
+      "rmse": 1045.4251867164126,
+      "mae": 727.1706605031843,
+      "r2": 0.6004040114707263
+    },
+    "reserved_mean_baseline": {
+      "rmse": 1653.7977627661612,
+      "mae": 1301.0219100814734,
+      "r2": -4.258258190503739e-09
+    }
+  },
+  "development_rows": 6818,
+  "reserved_check_rows": 1705,
+  "final_fit_rows": 8523,
+  "test_rows": 5681,
+  "seed": 42,
+  "submission": "submission.csv",
+  "selection_policy": "Frozen from development CV; no retuning on reserved-check results.",
+  "limitations": [
+    "Full-dataset EDA preceded the modelling split.",
+    "Only ten existing outlets; not an assessment of unseen-store generalisation.",
+    "Local RMSE is not a public leaderboard score."
+  ]
+}
